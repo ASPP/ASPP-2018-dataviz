@@ -12,6 +12,7 @@ Camerino, Italy , 2018
  
 Visualisation in Scientific Computing, NSF report, 1987.
 
+![](./blank.png)
 ## Introduction
 
 Scientific visualization is classically defined as the process of graphically
@@ -29,6 +30,7 @@ The goal of this crash course is to introduce a few concepts in order for you
 to achieve better visualization (hopefully). If you want to go further, you'll
 have to look at the miscellaneous references given at the end of this document.
 
+![](./blank.png)
 ## Visualization pipeline
 
 The visualization pipeline describes the process of creating visual
@@ -42,6 +44,7 @@ no unique definition of such pipeline but most of the time you'll find at least
 4. Rendered data (static image, interactive display, ...)
 
 
+![](./blank.png)
 ## Data type
 
 The nature of the data has a great influence on the kind of visualization you
@@ -62,7 +65,7 @@ categories)
 but you can also find finer detailed descriptions in the litterature.
 
 
-
+![](./blank.png)
 ## Graphical elements
 
 In the end, a scientific figures can be fully described by a set of
@@ -81,12 +84,13 @@ software are useful because they will automatize most of the work, more
 ideal case, you want to only specify your data and let the library decides of almost everything (e.g. [vega-lite](https://vega.github.io/vega-lite/))
 
 
+![](./blank.png)
 ## Visualization type
 ![](catalogue.png)
 
 From the [Data visualization catalogue](http://www.datavizcatalogue.com/index.html) by Severino Ribecca.
 
-
+![](./blank.png)
 ## Less is more
 
 *Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away* – Antoine de Saint-Exupery
@@ -94,7 +98,7 @@ From the [Data visualization catalogue](http://www.datavizcatalogue.com/index.ht
 ![](data-ink.gif)
 
 
-
+![](./blank.png)
 ## Ten simple rules
 
 From [Ten simple rules for better figures](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833), N.P. Rougier, M. Droettboom, P.E. Bourne, 2014.
@@ -112,16 +116,18 @@ From [Ten simple rules for better figures](http://journals.plos.org/ploscompbiol
 10. Get the Right Tool
 
 
-
+![](./blank.png)
 ## Crash course
 
 [![](./slides.png)](./slides.pdf)
 
 
-----
+
+![](./blank.png)
 
 ## Exercices
 
+![](./blank.png)
 ### Exercise 1: Too much ink...
 
 Consider the following figure and, using matplotlib, try to remove as much ink
@@ -150,6 +156,8 @@ Xn = np.random.uniform(16, 20, 25)
 Yn = gaussian(Xn, 0.65, 17.6, 1.) + 0.01 * np.random.normal(size=len(Xn))
 ```
 
+![](./blank.png)
+
 ### Exercise 2: Using the right tool
 
 You have a nice [image](neurons.jpg) and you would like to show labeled
@@ -160,12 +168,15 @@ independently of the images color/contrast.
 ![](final.jpg)
 
 
+![](./blank.png)
+
 ### Exercise 3: Misleading the reader
 
 What's wrong with this graphic ? How would you correct it ?
 
 ![](obama.jpg)
 
+![](./blank.png)
 ### Exercise 4: Editor request
 
 Your article just been accepted but the editor request figure 2 to be at least
@@ -173,6 +184,7 @@ Your article just been accepted but the editor request figure 2 to be at least
 figure ? Is it relevant if you figure has been saved in vector format ?
 
 
+![](./blank.png)
 ### Exercise 5: Replication
 
 Look at
