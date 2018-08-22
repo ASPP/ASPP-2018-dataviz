@@ -12,6 +12,9 @@
 
 ### Vector or bitmap
 
+![](./Bitmap_VS_SVG.svg)
+
+
 * If figure has been saved in bitmap format (e.g. PNG), you should ensure it has
   sufficient resolution
 * If figure has been saved in vector format (e.g. PDF), you don't care about
