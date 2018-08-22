@@ -115,7 +115,7 @@ From [Ten simple rules for better figures](http://journals.plos.org/ploscompbiol
 
 ## Crash course
 
-[![](./slides.jpg)](./slides.pdf)
+[![](./slides.png)](./slides.pdf)
 
 
 ----

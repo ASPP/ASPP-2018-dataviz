@@ -1,30 +1,5 @@
 #!/bin/bash
 
-# I am the convertPDFs.sh script
-
-# ARGUMENTS
-# $1 - PDF to convert
-# $2 - Pixel Density
-# $3 - Scale (in %)
-# $4 - Shadow opacity
-# $5 - Shadow sigma
-# $6 - Relative distance of shadow (%)
-
-# Example:
-# convert-PDF.sh filename.pdf 150 50 75 10 10
-
-# Convert PDF to PNGs (one image per page)
-# convert -density $2 $1 -profile /usr/share/ghostscript/9.15/iccprofiles/default_cmyk.icc -profile /usr/share/color/icc/OpenICC/sRGB.icc -scale $3% ${1%.pdf}_%03d.png
-convert -density $2 $1 -scale $3% ${1%.pdf}_%03d.png
-
-# Add shadow
-for i in ${1%.pdf}*.png
- do
-  convert $i \( +clone -background black -shadow $4x$5+$6x$6% \) +swap -background white -layers merge ${i%png}shadow.png
- done
-
-# Mount into one image one after the other
-montage -tile 3x -geometry +1+1 ${1%.pdf}*.shadow.png ${1%pdf}jpg
-
-# Remove temporary unnecessary PNG files
-rm -f ${1/.pdf/}*.png
+convert -density 150 $1 -bordercolor black -border 1 -scale 25% ${1%.pdf}_%03d.png
+montage -tile 3x -geometry +5+5 ${1%.pdf}_*.png ${1%pdf}png
+rm -f ${1/.pdf/}_*.png
