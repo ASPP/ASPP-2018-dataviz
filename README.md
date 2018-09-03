@@ -44,6 +44,7 @@ to look at the miscellaneous references given at the end of this document.
 
 Please go to the [Matplotlib tutorial](http://www.labri.fr/perso/nrougier/teaching/matplotlib/matplotlib.html) page.
 
+![](https://github.com/rougier/figure-anatomy/raw/master/anatomy.png)
 
 
 ![](blank.png)
