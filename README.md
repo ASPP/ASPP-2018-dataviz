@@ -131,6 +131,7 @@ collected a small set of resources that might be read relatively rapidly.
 
 * [Wind map](https://github.com/rougier/windmap)
 * [Alien life](https://github.com/rougier/alien-life)
+* [Pendulum](https://github.com/rougier/pendulum)
 * [Less is more](https://github.com/rougier/less-is-more)
 * [Anatomy of a figure](https://github.com/rougier/figure-anatomy)
 * [Ten simple rules for better figures (code)](https://github.com/rougier/ten-rules)
